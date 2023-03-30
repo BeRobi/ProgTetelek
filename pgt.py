@@ -1,10 +1,11 @@
-VÁLTOZÓK KIÍRÓ UTASÍTÁS PYTHONBAN
+# VÁLTOZÓK KIÍRÓ UTASÍTÁS PYTHONBAN
 
 def kiiras():
     print("Az én nevem: Katalin")
 
 
-VÁLTOZÓK HASZNÁLATA, ADATTÍPUSOK
+# VÁLTOZÓK HASZNÁLATA, ADATTÍPUSOK
+
 def kiiras_nev():
     nev = "Katalin"     # szöveges típus - str
     kor = 53.5          # szám típus - float
@@ -15,7 +16,7 @@ def kiiras_nev():
     print(f"\t Férfi vagyok? : {ferfi}")
 
 
-MŰVELETEK SZÖVEGEKKEL
+# MŰVELETEK SZÖVEGEKKEL
 
 def muveletek_szovegekkel():
     szoveg="Az élet szép!"
@@ -48,7 +49,7 @@ def muveletekszovegekkel2():
     print(monogram1 + monogram2)
 
 
-MŰVELETEK SZÁMOKKAL
+# MŰVELETEK SZÁMOKKAL
 
 import math
 def muveletek_szamokkal():
@@ -71,7 +72,7 @@ def muveletek_szamokkal():
     print(f"{13 } szám kettővel való osztási maradéka: {13 % 2}")
 
 
-ADATBEKÉRÉS
+# ADATBEKÉRÉS
 
 def adatbekeres():
     nev = input("Add meg a neved!")
@@ -80,7 +81,7 @@ def adatbekeres():
     print(f"A neved: {nev} \n {kor} éves vagy.")
 
 
-ELÁGAZÁSOK
+# ELÁGAZÁSOK
 
 def egyszeru_elagazas():
     #adott egy szám, döntsük el róla, hogy páros, vagy páratlan?
@@ -215,7 +216,7 @@ def egymasbaagyazott():
             print(" A házastárs lánya.")
 
 
-KOMPLEX FELADAT ELÁGAZÁSOKKAL
+# KOMPLEX FELADAT ELÁGAZÁSOKKAL
 
 def pizza():
     """Készíts Pizza rendelő alkalmazást:
@@ -277,7 +278,7 @@ def pizza():
     print(szoveg + " Fizetendő: " + str(ar) + " Ft." )
 
 
-BONTSUK METÓDUSOKRA!
+# BONTSUK METÓDUSOKRA!
 
 def pizza2():
     """Készíts Pizza rendelő alkalmazást:
@@ -376,8 +377,7 @@ def feltet_ar(feltet_kelle):
     return pluszar
 
 
-CIKLUSOK
-CIKLUSOK - WHILE CIKLUS - SZÁMLÁLÓS CIKLUS
+# CIKLUSOK - WHILE CIKLUS - SZÁMLÁLÓS CIKLUS
 
 def szamlalos():
     print("Írjuk ki a páros számokat 0 és 30 között! [0,30)")
@@ -393,7 +393,7 @@ def szamlalos():
         i -= 1  # a ciklusváltozó értékét meg kell változtatni
 
 
-ELÖLTESZTELŐS CIKLUS - WHILE - ELLENŐRZÖTT ADATBEKÉRÉS
+# ELÖLTESZTELŐS CIKLUS - WHILE - ELLENŐRZÖTT ADATBEKÉRÉS
 
 def ellenorzott_adatbekeres():
     # Kérjük be a felhasználótól az életkorát. Hibás érték esetén kérjük újra!
@@ -423,7 +423,7 @@ def adatbekeres():
     # ciklus vége - akkor jutunk ide, ha a feltétel hamis lesz
 
 
-PROGRAMOZÁSI TÉTELEK - SZÁMOKON 
+# PROGRAMOZÁSI TÉTELEK - SZÁMOKON 
 
 def megszamlalas():
     # Egy sorozatban adott tulajdonságú elemek száma
@@ -485,7 +485,7 @@ def eldontes():
         print("Nincs páros szám!")
 
 
-EGYMÁSBA ÁGYAZOTT CIKLUSOK
+# EGYMÁSBA ÁGYAZOTT CIKLUSOK
 
 def szorzotabla():
     #Írjuk ki a szorzótáblát a képernyőre!
@@ -502,7 +502,7 @@ def szorzotabla():
     #külső ciklus vége
 
 
-LISTÁK
+# LISTÁK
 
 # LISTÁK BEJÁRÁSA
 
@@ -535,7 +535,7 @@ def lottoszamok():
     #ciklus vége
 
 
-PROGRAMOZÁSI TÉTELEK LISTÁKON
+# PROGRAMOZÁSI TÉTELEK LISTÁKON
 
 def megszamlalas():
     # Adott egy lista, hány páros szám van benne?
@@ -605,7 +605,7 @@ def nyert_e_lotto():
         print("Nem nyert!")
 
 
-EGYMÁSBA ÁGYAZOTT CIKLUSSAL KÉT LISTA
+# EGYMÁSBA ÁGYAZOTT CIKLUSSAL KÉT LISTA
 
 def hanytalalat_lotto():
     # Adott 5 lottószám!
@@ -635,7 +635,7 @@ def hanytalalat_lotto():
     print(f"A találatok száma: {talalat_db}")
 
 
-SZÖVEGKEZELÉS  -  PROGRAMOZÁSI TÉTELEK
+# SZÖVEGKEZELÉS  -  PROGRAMOZÁSI TÉTELEK
 
 def abetuk_szama():
     # A szövegek karakterekből álló listák. Az egyes betűkre az indexükkel tudunk hivatkozni.
@@ -691,9 +691,9 @@ def maximumkivalasztas_szoveg():
     print(f" {lista} leghosszabb szava: {lista[max_hely]}, hossza:  {max_ertek }, a helye: {max_hely}")
 
 
-KOMPLEX FELADAT CIKLUSOKKAL
+# KOMPLEX FELADAT CIKLUSOKKAL
 
-Az elágazásos fejezet végén specifikált pizzarendelő alkalmazást alakítsuk át úgy, hogy a felhasználótól addig kérje be a rendelésket, amíg a @ jelet nem ütjük le!
+""" Az elágazásos fejezet végén specifikált pizzarendelő alkalmazást alakítsuk át úgy, hogy a felhasználótól addig kérje be a rendelésket, amíg a @ jelet nem ütjük le!
 Tároljuk a felvett rendeléseket megfelelő listákba!  pizzanev, pizzameret, pizzaextra
 A rendelések felvétele után készítsünk statisztikát!
 1.	Melyik típusú (név alapján)  pizzából hány darab fogyott? 
@@ -701,7 +701,7 @@ A rendelések felvétele után készítsünk statisztikát!
 3.	Mekkora volt a bevétel? 
 4.	Hányszor kértek extra feltétet? 
 5.	A kicsi, nagy , vagy a közepes pizzából rendeltek-e többet? 
-6.	… ami még eszetekbe jut. 
+6.	… ami még eszetekbe jut.  """
 
 
 
