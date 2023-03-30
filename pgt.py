@@ -1,3 +1,5 @@
+link ="https://infopy.eet.bme.hu/ea02/#2"
+
 # VÁLTOZÓK KIÍRÓ UTASÍTÁS PYTHONBAN
 
 def kiiras():
